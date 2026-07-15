@@ -1,6 +1,10 @@
 ### Get all contacts
-
+### Local
 GET http://localhost:8080/contacts
+
+
+### Render
+GET https://cse341-ic-project1.onrender.com/contacts
 
 ### Get contact by id
 
