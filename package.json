@@ -1,0 +1,25 @@
+{
+  "name": "cse341-ic-project1",
+  "version": "1.0.0",
+  "description": "Project 1 CSE 341",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanchulde/cse341-IC-project1.git"
+  },
+  "author": "Ivan Chulde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanchulde/cse341-IC-project1/issues"
+  },
+  "homepage": "https://github.com/ivanchulde/cse341-IC-project1#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
+  }
+}
