@@ -1,20 +1,17 @@
-### Get all contacts
-### Local
+### =========================
+### LOCAL TESTS
+### =========================
+
+
+### Get all contacts - Local
 GET http://localhost:8080/contacts
 
 
-### Render
-GET https://cse341-ic-project1.onrender.com/contacts
-
-### Get contact by id
-
+### Get contact by id - Local
 GET http://localhost:8080/contacts/6a56f82f77a2db5f6d84df53
 
-### Render
-GET https://cse341-ic-project1.onrender.com/contacts/6a56f82f77a2db5f6d84df53
 
-### Create contact
-
+### Create contact - Local
 POST http://localhost:8080/contacts
 Content-Type: application/json
 
@@ -26,8 +23,8 @@ Content-Type: application/json
     "birthday":"2001-08-10"
 }
 
-### Update contact
 
+### Update contact - Local
 PUT http://localhost:8080/contacts/6a56f82f77a2db5f6d84df53
 Content-Type: application/json
 
@@ -39,6 +36,50 @@ Content-Type: application/json
     "birthday":"1992-12-19"
 }
 
-### Delete contact
 
-DELETE http://localhost:8080/contacts/6a56f82f77a2db5f6d84df57
+### Delete contact - Local
+DELETE http://localhost:8080/contacts/6a56f82f77a2db5f6d84df53
+
+
+
+### =========================
+### RENDER TESTS
+### =========================
+
+
+### Get all contacts - Render
+GET https://cse341-ic-project1.onrender.com/contacts
+
+
+### Get contact by id - Render
+GET https://cse341-ic-project1.onrender.com/contacts/6a56f82f77a2db5f6d84df53
+
+
+### Create contact - Render
+POST https://cse341-ic-project1.onrender.com/contacts
+Content-Type: application/json
+
+{
+    "firstName":"Peter",
+    "lastName":"Parker",
+    "email":"peter@marvel.com",
+    "favoriteColor":"Red",
+    "birthday":"2001-08-10"
+}
+
+
+### Update contact - Render
+PUT https://cse341-ic-project1.onrender.com/contacts/6a56f82f77a2db5f6d84df53
+Content-Type: application/json
+
+{
+    "firstName":"Luis",
+    "lastName":"Chulde",
+    "email":"ivan@gmail.com",
+    "favoriteColor":"Red",
+    "birthday":"1992-12-19"
+}
+
+
+### Delete contact - Render
+DELETE https://cse341-ic-project1.onrender.com/contacts/6a56f82f77a2db5f6d84df53
